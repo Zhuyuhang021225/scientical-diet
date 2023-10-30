@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "miniprogram-computed": "^4.4.0",
+    "tdesign-miniprogram": "^1.2.3"
+  }
+}

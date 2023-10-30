@@ -1,0 +1,3 @@
+<view class="index">
+  <ks-header title="首页"></ks-header>
+</view>

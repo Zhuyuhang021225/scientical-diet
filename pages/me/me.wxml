@@ -1,0 +1,71 @@
+<view class="me">
+  <ks-header title=""></ks-header>
+  <scroll-view scroll-y enhanced show-scrollbar class="function_list">
+    <view class="function_wrapper">
+      <view class="function_line {{userInfo_touched ? 'function_line_bg_touched' : 'function_line_bg'}}" bind:touchstart="touchStart" data-index="0" bind:touchend="touchEnd" bind:tap="goUserInfoDetail">
+        <view class="avatar_nickName">
+          <image class="avatar" src="{{userInfo.avatarUrl}}"></image>
+          <view class="nickName">{{userInfo.nickName}}</view>
+        </view>
+        <image class="function_in" src="https://mp-ce31015a-3ebf-47b1-b627-3957c765b12a.cdn.bspapp.com/icon/function_in.png"></image>
+      </view>
+      <view class="function_line weight_BMI">
+        <view class="currentWeight_wrapper wrapper" bind:tap="goUserInfoDetail">
+          <view class="number">{{userInfo.currentWeight ? userInfo.currentWeight : '--'}}</view>
+          <view class="text">当前(公斤)</view>
+        </view>
+        <view class="targetWeight_wrapper wrapper" bind:tap="goUserInfoDetail">
+          <view class="number">{{userInfo.targetWeight ? userInfo.targetWeight : '--'}}</view>
+          <view class="text">目标(公斤)</view>
+        </view>
+        <view class="BMI_wrapper wrapper" bind:tap="goUserInfoDetail">
+          <view class="number">{{BMI ? BMI : '--'}}</view>
+          <view class="text">BMI</view>
+        </view>
+      </view>
+    </view>
+
+    <view class="function_wrapper">
+      <view class="function_line {{healthTest_touched ? 'function_line_bg_touched' : 'function_line_bg'}}" bind:touchstart="touchStart" data-index="4" bind:touchend="touchEnd">
+        <view class="function_title">
+          <image class="icon" src="https://mp-ce31015a-3ebf-47b1-b627-3957c765b12a.cdn.bspapp.com/icon/health_test.png"></image>
+          <view class="title">健康测评</view>
+        </view>
+        <image class="function_in" src="https://mp-ce31015a-3ebf-47b1-b627-3957c765b12a.cdn.bspapp.com/icon/function_in.png"></image>
+      </view>
+      <view class="function_line {{healthPlan_touched ? 'function_line_bg_touched' : 'function_line_bg'}}" bind:touchstart="touchStart" data-index="5" bind:touchend="touchEnd">
+        <view class="function_title">
+          <image class="icon" src="https://mp-ce31015a-3ebf-47b1-b627-3957c765b12a.cdn.bspapp.com/icon/health_plan.png"></image>
+          <view class="title">健康方案</view>
+        </view>
+        <image class="function_in" src="https://mp-ce31015a-3ebf-47b1-b627-3957c765b12a.cdn.bspapp.com/icon/function_in.png"></image>
+      </view>
+     </view>
+    
+    <view class="function_wrapper">
+      <view class="function_line {{about_touched ? 'function_line_bg_touched' : 'function_line_bg'}}" bind:touchstart="touchStart" data-index="1" bind:touchend="touchEnd">
+        <view class="function_title">
+          <image class="icon" src="https://mp-ce31015a-3ebf-47b1-b627-3957c765b12a.cdn.bspapp.com/icon/about.png"></image>
+          <view class="title">关于我们</view>
+        </view>
+        <image class="function_in" src="https://mp-ce31015a-3ebf-47b1-b627-3957c765b12a.cdn.bspapp.com/icon/function_in.png"></image>
+      </view>
+      <view class="function_line {{suggestion_touched ? 'function_line_bg_touched' : 'function_line_bg'}}" bind:touchstart="touchStart" data-index="2" bind:touchend="touchEnd">
+        <view class="function_title">
+          <image class="icon" src="https://mp-ce31015a-3ebf-47b1-b627-3957c765b12a.cdn.bspapp.com/icon/suggestion.png"></image>
+          <view class="title">反馈建议</view>
+        </view>
+        <button class="feedback" open-type="feedback">feedback</button>
+        <image class="function_in" src="https://mp-ce31015a-3ebf-47b1-b627-3957c765b12a.cdn.bspapp.com/icon/function_in.png"></image>
+      </view>
+      <view class="function_line {{setting_touched ? 'function_line_bg_touched' : 'function_line_bg'}}" bind:touchstart="touchStart" data-index="3" bind:touchend="touchEnd">
+        <view class="function_title">
+          <image class="icon" src="https://mp-ce31015a-3ebf-47b1-b627-3957c765b12a.cdn.bspapp.com/icon/setting.png"></image>
+          <view class="title">设置</view>
+        </view>
+        <image class="function_in" src="https://mp-ce31015a-3ebf-47b1-b627-3957c765b12a.cdn.bspapp.com/icon/function_in.png"></image>
+      </view>
+     </view>
+
+  </scroll-view>
+</view>

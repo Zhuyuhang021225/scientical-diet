@@ -1,0 +1,4 @@
+page{
+  --my-theme-color: rgb(26, 224, 175);
+  --my-page-bg-color:  #F5F6FA;
+}

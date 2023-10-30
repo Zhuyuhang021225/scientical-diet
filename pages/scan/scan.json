@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "ks-header":"/components/ks-header/ks-header",
+    "t-pull-down-refresh": "tdesign-miniprogram/pull-down-refresh/pull-down-refresh",
+    "t-search": "tdesign-miniprogram/search/search",
+    "t-loading": "tdesign-miniprogram/loading/loading"
+  },
+  "navigationStyle": "custom",
+  "navigationBarBackgroundColor": "#B7D9C6"
+}

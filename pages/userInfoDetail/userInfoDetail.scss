@@ -1,0 +1,63 @@
+.userInfoDetail{
+  height: 100vh;
+  background-color: #F5F6FA;
+  padding-top: 40rpx;
+  .info_list{
+    background-color: white;
+    margin-left: 30rpx;
+    margin-right: 30rpx;
+    border-radius: 25rpx;
+    overflow: hidden;
+    .info_line{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding: 24rpx 30rpx 24rpx 30rpx;
+      border-bottom: 1px solid #F5F6FA;
+      .info_title{
+          font-size: 32rpx;
+      }
+      .info_content{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        color: #888888;
+        position: relative;
+        .avatar_button{
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 100%;
+          width: 100%;
+          white-space: nowrap;
+          opacity: 0;
+        }
+        .avatar{
+          width: 75rpx;
+          height: 75rpx;
+          border-radius: 50%;
+        }
+        .function_in{
+          width: 40rpx;
+          height: 40rpx;
+          padding-left: 10rpx;
+        }
+        .nickName_input{
+          text-align: right;
+        }
+      }
+    }
+  }
+  .submit_userInfo::after{
+    border: none !important;
+  }
+  .submit_userInfo{
+    margin-top: 100rpx;
+    background-color: rgb(228, 252, 246);
+    color: rgb(26, 224, 175);
+    border-radius: 30rpx;
+    width: 80%;
+    border: 2px solid rgb(26, 224, 175);
+  }
+}

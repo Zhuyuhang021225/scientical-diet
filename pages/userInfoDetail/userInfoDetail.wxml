@@ -1,0 +1,73 @@
+<view class="userInfoDetail">
+  <view class="info_list">
+    <view class="info_line">
+      <view class="info_title">头像</view>
+      <view class="info_content">
+        <button class="avatar_button" open-type="chooseAvatar"  bind:chooseavatar="onChooseAvatar" >选择头像</button>
+        <image class="avatar" src="{{userInfo.avatarUrl}}"></image>
+        <image class="function_in" src="https://mp-ce31015a-3ebf-47b1-b627-3957c765b12a.cdn.bspapp.com/icon/function_in.png"></image>
+      </view>
+    </view>
+
+    <view class="info_line">
+      <view class="info_title">昵称</view>
+      <view class="info_content">
+        <input class="nickName_input" type="nickname" value="{{userInfo.nickName}}" bind:blur="onChooseNickName"/>
+        <image class="function_in" src="https://mp-ce31015a-3ebf-47b1-b627-3957c765b12a.cdn.bspapp.com/icon/function_in.png"></image>
+      </view>
+    </view>
+
+    <view class="info_line">
+      <view class="info_title">性别</view>
+      <view class="info_content">
+        <picker mode="selector" value="{{userInfo.gender}}" range="{{genders}}" bind:change="changeGender">
+          <view class="picker">{{userInfo.gender == '' ? '未知' : userInfo.gender}}</view>
+        </picker>
+        <image class="function_in" src="https://mp-ce31015a-3ebf-47b1-b627-3957c765b12a.cdn.bspapp.com/icon/function_in.png"></image>
+      </view>
+    </view>
+
+    <view class="info_line">
+      <view class="info_title">生日</view>  
+      <view class="info_content">
+        <picker mode="date" value="{{userInfo.birthday}}" bind:change="onChooseBirthday">
+          <view class="picker">{{userInfo.birthday == '' ? '完善生日，获得好礼' : userInfo.birthday}}</view>
+        </picker> 
+        <image class="function_in" src="https://mp-ce31015a-3ebf-47b1-b627-3957c765b12a.cdn.bspapp.com/icon/function_in.png"></image>
+      </view>
+    </view>
+
+    <view class="info_line">
+      <view class="info_title">身高</view>  
+      <view class="info_content">
+        <picker mode="selector" value="{{userInfo.height}}" bind:change="onChooseHeight" range="{{heights}}">
+          <view class="picker">{{userInfo.height == '' ? '完善身高' : userInfo.height+' cm'}}</view>
+        </picker> 
+        <image class="function_in" src="https://mp-ce31015a-3ebf-47b1-b627-3957c765b12a.cdn.bspapp.com/icon/function_in.png"></image>
+      </view>
+    </view>
+
+    <view class="info_line">
+      <view class="info_title">当前体重</view>  
+      <view class="info_content">
+        <picker mode="selector" value="{{userInfo.currentWeight}}" bind:change="onChooseCurrentWeight" range="{{weights}}">
+          <view class="picker">{{userInfo.currentWeight == '' ? '完善当前体重' : userInfo.currentWeight+' kg'}}</view>
+        </picker> 
+        <image class="function_in" src="https://mp-ce31015a-3ebf-47b1-b627-3957c765b12a.cdn.bspapp.com/icon/function_in.png"></image>
+      </view>
+    </view>
+
+    <view class="info_line">
+      <view class="info_title">目标体重</view>  
+      <view class="info_content">
+        <picker mode="selector" value="{{userInfo.targetWeight}}" bind:change="onChooseTargetWeight" range="{{weights}}">
+          <view class="picker">{{userInfo.targetWeight == '' ? '完善目标体重' : userInfo.targetWeight+' kg'}}</view>
+        </picker> 
+        <image class="function_in" src="https://mp-ce31015a-3ebf-47b1-b627-3957c765b12a.cdn.bspapp.com/icon/function_in.png"></image>
+      </view>
+    </view>
+
+  </view>
+
+  <button class="submit_userInfo" bind:tap="OnSubmitUserInfo">保存</button>
+</view>

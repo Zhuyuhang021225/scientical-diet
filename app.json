@@ -1,0 +1,41 @@
+{
+  "usingComponents": {
+    "t-divider": "tdesign-miniprogram/divider/divider"
+  },
+  "pages":[
+    "pages/index/index",
+    "pages/record/record",
+    "pages/scan/scan",
+    "pages/me/me",
+    "pages/userInfoDetail/userInfoDetail",
+    "pages/searchPage/searchPage"
+  ],
+  "tabBar": {
+    "custom": true,
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/record/record",
+        "text": "记录"
+      },
+      {
+        "pagePath": "pages/scan/scan",
+        "text": "扫描"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "我的"
+      }
+    ]
+  },
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTextStyle":"black",
+    "homeButton": false
+  },
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,7 @@
+.nav-bar{
+  --td-tab-bar-active-color: rgb(26, 224, 175);
+  --td-tab-bar-active-bg:rgb(228, 252, 246);
+  --td-tab-bar-color:rgb(110, 101, 101);
+  --td-brand-color: rgb(26, 224, 175);
+}
+

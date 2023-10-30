@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "ks-header":"/components/ks-header/ks-header"
+  },
+  "navigationStyle":"custom"
+}
